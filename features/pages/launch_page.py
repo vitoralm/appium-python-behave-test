@@ -37,7 +37,7 @@ class LaunchPage(Page):
         book_list_last_el = self.find_element(self.BOOK_TITLE)
 
         while (book_found or not list_end):
-            if book_list_last_el.text == book_list[-1].text:
+            if book_list_last_el == book_list[-1]:
                 list_end = True
 
             for book in book_list:
