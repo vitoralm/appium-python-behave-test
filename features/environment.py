@@ -13,7 +13,7 @@ def before_scenario(context, scenario):
                                                                                             'newCommandTimeout': 300
                                                                                             })
 
-    context.driver.implicitly_wait(30)
+    context.driver.implicitly_wait(120)
     context.app = Application(context.driver)
 
 def after_scenario(context, scenario):

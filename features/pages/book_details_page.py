@@ -31,7 +31,6 @@ class BookDetailsPage(Page):
             expected="Share Image", real=share_label.text)
         
         share_tray = self.find_element(self.ANDROID_SHARE_TRAY)
-        #import ipdb; ipdb.sset_trace()
         compare_data_with_expected(expected=True, real=bool(share_tray.is_displayed()))
 
     def back_press(self):
